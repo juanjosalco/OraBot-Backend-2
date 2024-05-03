@@ -1,8 +1,8 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Logs
+*.zip
+*.log
+*.gz
+*.tar
 
 ### STS ###
 .apt_generated
@@ -13,10 +13,16 @@ target/
 .springBeans
 .sts4-cache
 .log
+logs.log
 .gz
-backend/.log
-backend/.tmp
-backend/.gz
+backend/*.log
+backend/*.tmp
+backend/*.gz
+/oracle
+/backend/src/main/resources/application.properties
+
+*/*.properties
+
 
 ### IntelliJ IDEA ###
 .idea
@@ -33,27 +39,10 @@ backend/.gz
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
-/target/*
+
+### logs ###
+logs*
 
 ### VS Code ###
 .vscode/
-
-### LOGS ###
-*.log
-logs/
-
-### OS ###
-.DS_Store
-.DS_Store?
-._*
-
-### Java ###
-*.class
-*.jar
-*.war
-
-### Node ###
-**/node_modules
-npm-debug.log
-yarn-error.log
 
